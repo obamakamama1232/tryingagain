@@ -1,13 +1,21 @@
 <html>
 
 <style>body{
-    padding:100px 0;
-    background-image: url('bg.jpg');
-   color: rgb(240, 144, 18);
-   font-family: Century Gothic;
-  }
-  </style>
+    aspect-ratio: auto;
+  padding:100px 0;
+  background-image: url('bg.jpg');
+ color: #D3C4E3;
+ font-family: 'Times New Roman' ;
+}
+</style>
   
+
+<div id="container">
+
+
+</div>
+
+
 
 <body>
 
@@ -15,22 +23,203 @@
 <center>    
     <br>
     <br>
-  Ma lady
-  i am really sorry again for whatever i did
-  that photo was a weird one because i was fixing my mask and my hand was placed like i am tickling my nose
-  i was embarrased to show that to you.
-  im really sorry for running like that
-as being a responsible boyfriend i will not repeat such thing again
+  Ma lady<br>
+  i am really sorry again for whatever i did<br>
+  that photo was a weird one because i was fixing my mask and my hand was placed like i am tickling my nose<br>
+  i was embarrased to show that to you.<br>
+  im really sorry for running like that<br>
+as being a responsible boyfriend i will not repeat such thing again<br>
 
 <br>
 <br>
 
 <br>
-<button onclick="window.location.href= 'page3.html';">
-
-   next->
-</button>
+<button class="button-48" role="button"><span class="text"; onclick="window.location.href= 'page3.html';">Nextttt->>></span></button>
 </center>
 </h3>
 
+<button id="shakeMe">shakeyshakey xd</button>
+
+
+
+<style>
+
+.button-48 {
+border-radius: 10px;
+    appearance: none;
+  background-color: transparent;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #607B7D;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #D3C4E3;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  border-radius: 50px;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body:after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  display: block;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+h1 {
+  margin: auto auto 1rem;
+  font-size: 3rem;
+  color: #fff;
+}
+#shakeMe {
+  background: transparent;
+  font-size: 10px;
+  margin: 1rem auto auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}
+#shakeMe:hover,
+#shakeMe:focus {
+  border: 3px solid rgb(181, 181, 181);
+  outline: none;
+}
+
+/* shake code below*/
+body.animate {
+  overflow: hidden;
+}
+.animate #shakeMe {
+  transform: scale(1.2);
+}
+body.animate {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 2px, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 5px, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 10px, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+
+
+
+
+</style>
+
+
+
+<script>
+
+
+
+
+(function (d) {
+  "use strict";
+  const shakeButton = d.querySelector("#shakeMe");
+  const shakeElement = d.querySelector("body");
+  shakeButton.addEventListener("click", (e) => {
+    shakeElement.classList.add("animate");
+    setTimeout(function () {
+      shakeElement.classList.remove("animate");
+    }, 1000); /* 2 seconds matches time of animation*/
+  });
+})(document);
+
+
+
+
+</script>
+
+
+
 </body>
+</html>
