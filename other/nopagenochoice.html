@@ -2,36 +2,170 @@
 
 
 <style>body{
+    aspect-ratio: auto;
     padding:100px 0;
     background-image: url('bg.jpg');
-   color: rgb(240, 144, 18);
-   font-family: Century Gothic;
+   color: #D3C4E3;
+   font-family: 'Century Gothic';
   }
-  </style>
+</style>
 <body>
 
 <h3>
 <center>    
     <br>
     <br>
-well youve decided again to not forgive me but you dont have a choice because im older than you hahahah
+well youve decided again to not forgive me but you dont have a choice <br>because im older than you hahahah
 
 
 <br>
 <br>
 your answer:
 <br>
-<button onclick="window.location.href= 'finalpage2.html';">
 
-   yesss:)))))
-</button>
 
-<button onclick="window.location.href= 'nopagenochoice.html';">
+ <button class="button-yes" role="button"><span class="text"; onclick="window.location.href= 'finalpage2.html';">Yesss:)))</span></button>
+ <button class="button-no" role="button"><span class="text"; onclick="window.location.href= 'nopagenochoice.html';">Nooo:(( (this is looped until you say yes hehehe)</span></button>
 
-    no:(((((this is looped until you say yess hehe)
- </button>
+
 
 </center>
 </h3>
+
+
+<style>
+
+
+/*====================================================================================================================================*/
+
+
+.button-yes {
+border-radius: 10px;
+    appearance: none;
+  background-color: transparent;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #D3C4E3;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-yes:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #d329a0;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  border-radius: 50px;
+}
+
+.button-yes:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-yes:after {
+  background-color: #FFFFFF;
+}
+
+.button-yes span {
+  z-index: 1;
+  position: relative;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+.button-no {
+border-radius: 10px;
+    appearance: none;
+  background-color: transparent;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-no:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #3b0341;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  border-radius: 50px;
+}
+
+.button-no:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-no:after {
+  
+  background-color: #FFFFFF;
+}
+
+.button-no span {
+  z-index: 1;
+  position: relative;
+}
+
+
+
+
+</style>
 
 </body>

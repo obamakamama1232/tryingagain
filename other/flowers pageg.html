@@ -3,16 +3,21 @@
 
 
 <style>body{
+    aspect-ratio: auto;
     padding:100px 0;
-    background-image: url('other/bg.jpg');
+    background-image: url('bg.jpg');
    color: #D3C4E3;
    font-family: Century Gothic;
   }
 </style>
 
 <head>
+    auto redirect in 7 seconds
 
-    <button class="button-48" role="button"><span class="text"; onclick="window.location.href= 'final page.html';">Button 48</span></button>
+    <meta http-equiv="refresh" content="7; url=final page.html">
+    <!-- <button class="button-48" role="button"><span class="text"; onclick="window.location.href= 'final page.html';">Button 48</span></button> -->
+
+
 
 </head>
 
@@ -76,14 +81,10 @@
     box-sizing: border-box;
 }
 
-:root{
-    --color-bg: linear-gradient(to top,#010329,#000005);
-    --color-glass:linear-gradient(to left,#142544,#1a9092);
-    --color-water:linear-gradient(to left,#142544,#1b6d6e);
-}
+
 
 body{
-    background-image:var(--color-bg);
+
     min-height: 100vh;
     display: flex;
     justify-content: center;
